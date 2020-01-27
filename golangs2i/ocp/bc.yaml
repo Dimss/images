@@ -1,0 +1,21 @@
+kind: "BuildConfig"
+apiVersion: "build.openshift.io/v1"
+metadata:
+  name: golangs2i-build
+spec:
+  runPolicy: "Serial"
+  source:
+    git:
+      uri: "https://github.com/Dimss/golang-s2i.git"
+  strategy:
+    dockerStrategy:
+      from:
+        kind: DockerImage
+        name: golang:alpine
+  output:
+    to:
+      kind: "DockerImage"
+      name: "docker.io/dimssss/golang-s2i:0.5"
+    pushSecret:
+      name: dimssss-docker-io
+
