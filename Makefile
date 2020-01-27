@@ -1,4 +1,4 @@
-oc4-build:
+tools-build:
 	docker build oc4.x -t docker.io/dimssss/tools:latest
 
 java11-build:
