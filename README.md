@@ -1,4 +1,4 @@
-## This repo store different OpenShift adopted images for building and managing CI/CD pipeline on OpenShift Container Platform 
+## This repo store different OpenShift adopted images for building and managing CI/CD pipelines on OpenShift Container Platform 
 
 
 ### Images list
